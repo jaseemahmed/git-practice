@@ -1,0 +1,13 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #1f2937;
+  color: #ffffff;
+}
+.site-header nav a {
+  color: #ffffff;
+  margin-left: 16px;
+  text-decoration: none;
+}
