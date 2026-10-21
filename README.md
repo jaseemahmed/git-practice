@@ -7,3 +7,9 @@ Call `greet("Jaseem")` to get a greeting. If no name is given, it returns "Hello
 ## About
 
 A practice repo for learning Git and GitHub workflows.
+
+## Get in touch
+
+- LinkedIn: [link]
+- Email: mailjaseem.ak@gmail.com
+- Portfolio: [link]
