@@ -1,3 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+  color: #1f2937;
+}
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -11,6 +18,9 @@
   color: #ffffff;
   text-align: center;
   padding: 16px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .site-sidebar {
   width: 200px;
@@ -38,7 +48,7 @@
   text-decoration: none;
 }
 .site-content {
-  margin-left: 220px;
+  margin-left: 230px;
   padding: 16px;
 }
 .chapters {
