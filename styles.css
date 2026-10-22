@@ -6,14 +6,75 @@
   background: #1f2937;
   color: #ffffff;
 }
-.site-header nav a {
-  color: #ffffff;
-  margin-left: 16px;
-  text-decoration: none;
-}
 .site-footer {
   background: #1f2937;
   color: #ffffff;
   text-align: center;
   padding: 16px 0;
+}
+.site-sidebar {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #f3f4f6;
+  padding: 16px;
+}
+.site-sidebar nav {
+  margin-top: 32px;
+}
+.site-sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+.site-sidebar nav ul li {
+  margin: 1rem 0;
+}
+.site-sidebar nav a {
+  display: block;
+  color: #1f2937;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+.site-content {
+  margin-left: 220px;
+  padding: 16px;
+}
+.chapters {
+  margin-top: 8px;
+}
+.chapters summary {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+}
+.chapters summary::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: 80%;
+}
+.chapters[open] summary::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 15 12 9 18 15'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: 80%;
+}
+.chapters .chapter-list {
+  list-style: none;
+  padding-left: 16px;
+  margin-top: 12px;
 }

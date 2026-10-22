@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="favicon.ico" />
     <title>Git Practice</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>Git Practice</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
+    <aside class="site-sidebar">
+      <nav class="site-navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li>
+            <details class="chapters">
+              <summary>Chapters</summary>
+
+              <ul class="chapter-list">
+                <li><a href="Chapters/chapter-1.html">Chapter 1</a></li>
+                <li><a href="Chapters/chapter-2.html">Chapter 2</a></li>
+                <li><a href="Chapters/chapter-3.html">Chapter 3</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
       </nav>
-    </header>
+    </aside>
     <main class="site-content">
       <h2>Welcome to Git Practice</h2>
       <p>This is a simple web page to practice Git commands and workflows.</p>
