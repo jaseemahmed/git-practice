@@ -88,3 +88,29 @@ body {
   padding-left: 16px;
   margin-top: 12px;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.grid-container .grid-item {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container .grid-item img {
+  width: 100%;
+  height: 200px;
+  display: block;
+  margin-bottom: 8px;
+}
+.grid-container .grid-item a {
+  text-decoration: none;
+  color: #1f2937;
+}
