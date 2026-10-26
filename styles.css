@@ -137,3 +137,7 @@ body {
   object-fit: cover;
   border-radius: 8px;
 }
+
+.chapter-links {
+  margin-bottom: 8rem;
+}
