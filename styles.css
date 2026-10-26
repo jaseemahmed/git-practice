@@ -114,3 +114,20 @@ body {
   text-decoration: none;
   color: #1f2937;
 }
+
+.terms-list {
+  list-style: none;
+  padding: 0;
+}
+.terms-list li {
+  margin-bottom: 16px;
+}
+
+.footer-link {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.footer-link a {
+  color: #ffffff;
+  text-decoration: none;
+}
