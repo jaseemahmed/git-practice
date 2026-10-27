@@ -141,3 +141,38 @@ body {
 .chapter-links {
   margin-bottom: 8rem;
 }
+.site-navigation li a,
+.site-navigation li a.active,
+.site-navigation li a:hover,
+.site-navigation li a:focus,
+.site-navigation li summary {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #1f2937;
+  border-radius: 4px;
+}
+.site-navigation li a:hover {
+  background: #e5e7eb;
+  padding: 8px;
+  border-radius: 4px;
+}
+.site-navigation li a.active {
+  background: #0046d1;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+}
+.site-navigation li a.active:focus {
+  background: #0046d1;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.site-navigation li a:focus {
+  background: #e5e7eb;
+  padding: 8px;
+  border-radius: 4px;
+  outline: 1px solid #3b82f6;
+}
