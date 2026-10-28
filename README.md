@@ -15,7 +15,7 @@ A practice repo for learning Git and GitHub workflows. Building a website includ
   - A github account
   - VS Code (or a code editor of your choice)
 
-# How to use
+# How to use ?
 
 Getting started is quick and simple:
 
