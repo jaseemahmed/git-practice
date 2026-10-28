@@ -55,6 +55,230 @@
         Git's core features and be ready to start using it for your own
         projects.
       </p>
+      <div class="chapter-metadata">
+        <p>Prerequisites: Basic understanding of the command line</p>
+        <p>Duration: 2 hours</p>
+      </div>
+
+      <ul class="topics">
+        <li>
+          <h2>The Problem Git Solves (Why Version Control?)</h2>
+          <p>
+            Before version control, writing code with others (or even by
+            yourself) was a chaotic mess.
+          </p>
+
+          <h5>The Old Way (And Why It Hurt)</h5>
+          <ul>
+            <li>
+              The Naming Trap: Projects ended up looking like
+              project_final_v2_FOR_REAL.html.
+            </li>
+            <li>
+              The "What Did I Break?" Panic: You make changes, something breaks,
+              and you have no clean way to undo just that specific mistake.
+            </li>
+            <li>
+              The Teamwork Nightmare: Emailing files back and forth or
+              accidentally overwriting your teammate's hard work.
+            </li>
+          </ul>
+          <h5>The Solution: Version Control</h5>
+          <p>
+            A Version Control System (VCS) like Git acts as an infinite time
+            machine and save-point system for your code.
+          </p>
+          <p>With Git, you can:</p>
+          <ul>
+            <li>
+              Roll back instantly: Return to any previous working state if a bug
+              pops up.
+            </li>
+            <li>
+              Experiment safely: Test wild new ideas without risking your main
+              project.
+            </li>
+            <li>
+              Collaborate seamlessly: Work with others on the exact same files
+              without stepping on each other's toes.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>Centralized vs. Distributed VCS</h2>
+          <p>
+            Not all version control systems work the same way. They generally
+            fall into two categories:
+          </p>
+          <h5>Centralized VCS (The Old Way)</h5>
+          <ul>
+            <li>
+              How it works: A single central server holds all the project
+              history. Developers download files from it and upload changes back
+              to it.
+            </li>
+            <li>
+              The Catch: If the server goes down—or you lose your internet
+              connection—you cannot save history, share work, or access past
+              versions.
+            </li>
+          </ul>
+
+          <h5>Distributed VCS — Git (The Modern Way)</h5>
+          <ul>
+            <li>
+              How it works: Every developer has a full, local copy of the entire
+              project history on their own computer.
+            </li>
+            <li>
+              The Benefit: You can work completely offline, commit changes
+              locally at lightning speed, and there is no single point of
+              failure. If the main server crashes, any developer's local copy
+              can restore it.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>Git vs. GitHub (Clearing Up the #1 Confusion)</h2>
+          <p>
+            Beginners often get confused between Git and GitHub, but they are
+            entirely different tools that work together.
+          </p>
+          <h5>Git (The Engine)</h5>
+          <ul>
+            <li>
+              What it is: A free, open-source command-line tool installed on
+              your computer.
+            </li>
+            <li>
+              What it does: Tracks code history, manages versions, and saves
+              snapshots locally.
+            </li>
+            <li>Works offline: You don't need internet to use Git.</li>
+          </ul>
+          <h5>GitHub (The Cloud Hub)</h5>
+          <ul>
+            <li>
+              What it is: A cloud-based website that hosts Git repositories.
+            </li>
+            <li>
+              What it does: Stores your projects online so you can backup code,
+              collaborate with team members, and review changes.
+            </li>
+            <li>Alternatives: GitLab, Bitbucket, and SourceForge.</li>
+          </ul>
+          <p>
+            <i
+              >Analogy: Git is like the engine in a car. GitHub is like a mega
+              garage where you store, show off, and work on cars with your
+              friends.</i
+            >
+          </p>
+        </li>
+        <li>
+          <h2>The Core Mental Model: The Three States of Git</h2>
+          <p>
+            Git organizes your project into three main zones. Understanding this
+            mental model prevents 90% of beginner confusion:
+          </p>
+          <ol>
+            <li>
+              Working Directory: Your actual project folder where you write and
+              edit code.
+            </li>
+            <li>
+              Staging Area (Index): A temporary holding zone where you select
+              and package the specific file changes you want to include in your
+              next save.
+            </li>
+            <li>
+              Git Repository: The permanent database where Git stores your
+              official project history and snapshots.
+            </li>
+          </ol>
+
+          <p>
+            <i
+              >The Flow: You edit files in your Working Directory $\rightarrow$
+              you stage them into the Staging Area $\rightarrow$ you commit them
+              to the Repository.</i
+            >
+          </p>
+        </li>
+        <li>
+          <h2>Installation and First-Time Setup</h2>
+          <p>
+            Before you can use Git, you need to install it on your computer and
+            tell it who you are.
+          </p>
+          <h4>Step 1: Check if Git is Already Installed</h4>
+          <p>
+            Open your terminal (Command Prompt, PowerShell, or Git Bash) and
+            type:
+          </p>
+          <pre><code>git --version</code></pre>
+
+          <p>
+            If it returns a version number (like git version 2.x.x), you're good
+            to go! If not, download it from git-scm.com.
+          </p>
+          <h4>Step 2: Set Your Identity</h4>
+          <p>
+            Git attaches your name and email to every "save point" you make so
+            everyone knows who wrote the code. Run these two commands in your
+            terminal:
+          </p>
+          <div>
+            <pre><code>git config --global user.name "Your Name"</code></pre>
+            <pre><code>git config --global user.email "your.email@example.com"</code></pre>
+          </div>
+          <p>
+            <i>(Tip: Use the same email address you plan to use for GitHub!)</i>
+          </p>
+        </li>
+      </ul>
+      <div class="references">
+        <p>References:</p>
+        <ul>
+          <li>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"
+              >Pro Git Book - Chapter 1: About Version Control</a
+            >
+          </li>
+          <li>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"
+              >Pro Git Book - Chapter 2: Installing Git</a
+            >
+          </li>
+          <li>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup"
+              >Pro Git Book - Chapter 3: First-Time Git Setup</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://docs.github.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              >GitHub Docs</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="next-chapter-link">
+        <p>
+          <a href="basic-git-commands.html">Next Chapter: Basic Git Commands</a>
+        </p>
+      </div>
     </main>
     <footer class="site-footer">
       <p class="footer-link"><a href="../terms.html">Terms & Conditions</a></p>
