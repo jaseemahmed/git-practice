@@ -153,8 +153,7 @@ body {
   border-radius: 4px;
 }
 .site-navigation li a:hover {
-  background: #e5e7eb;
-  change to: #aac5fa
+  background: #aac5fa;
   padding: 8px;
   border-radius: 4px;
 }
