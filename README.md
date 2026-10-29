@@ -30,6 +30,13 @@ Getting started is quick and simple:
    - Directly: Locate `index.html` in the project folder and double click it to pen in the default browser.
    - Via Live Server: If using VS Code, open the folder, right-click index.html, and select "Open with Live Server".
 
+## Decisions
+
+- Tailwind is choosen as css framework to reduce time on writing custom styles by utilizing the pre weritten utility classes
+- As this is a learning project and a quick prototype, we choose tailwind play CDN instead of installing a tailwind library by running node js.
+- The primary reason is to reduce complexity and make the process easy
+- As this work will not be moved to production soon or may be never, no need to worry about the issues of using play CDN
+
 ## Get in touch
 
 - LinkedIn: [link]
