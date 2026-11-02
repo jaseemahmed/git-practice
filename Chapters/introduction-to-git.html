@@ -94,40 +94,46 @@
         </ul>
       </nav>
     </aside>
-    <main class="mx-auto ml-[260px] px-4 py-6">
+    <main class="mx-auto ml-[260px] px-4 py-6 mb-20">
       <img
-        class="chapter-thumbnail-page"
+        class="w-full h-auto rounded-xl mb-4"
         src="/images/intro-page.jpg"
         alt="Introduction to Git Thumbnail"
         width="100%"
       />
-      <h2>Chapter 1: Introduction to Git</h2>
-      <p>
+      <h2 class="text-xl font-bold mb-4 mt-4">
+        Chapter 1: Introduction to Git
+      </h2>
+      <p class="mb-4">
         In this chapter, we will cover the basics of Git, including its
         installation, configuration, and fundamental concepts. You will learn
         how to create a new repository, track changes, and understand the
         version control workflow.
       </p>
-      <p>
+      <p class="mb-4">
         By the end of this chapter, you should have a solid understanding of
         Git's core features and be ready to start using it for your own
         projects.
       </p>
-      <div class="chapter-metadata">
+      <div
+        class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4 flex justify-between rounded-md gap-2"
+      >
         <p>Prerequisites: Basic understanding of the command line</p>
         <p>Duration: 2 hours</p>
       </div>
 
       <ul class="topics">
         <li>
-          <h2>The Problem Git Solves (Why Version Control?)</h2>
-          <p>
+          <h2 class="text-lg font-semibold mb-2">
+            The Problem Git Solves (Why Version Control?)
+          </h2>
+          <p class="mb-4">
             Before version control, writing code with others (or even by
             yourself) was a chaotic mess.
           </p>
 
-          <h5>The Old Way (And Why It Hurt)</h5>
-          <ul>
+          <h5 class="text-md font-bold mb-2">The Old Way (And Why It Hurt)</h5>
+          <ul class="list-disc list-inside mb-4">
             <li>
               The Naming Trap: Projects ended up looking like
               project_final_v2_FOR_REAL.html.
@@ -141,13 +147,13 @@
               accidentally overwriting your teammate's hard work.
             </li>
           </ul>
-          <h5>The Solution: Version Control</h5>
-          <p>
+          <h5 class="text-md font-bold mb-2">The Solution: Version Control</h5>
+          <p class="mb-4">
             A Version Control System (VCS) like Git acts as an infinite time
             machine and save-point system for your code.
           </p>
-          <p>With Git, you can:</p>
-          <ul>
+          <p class="mb-4">With Git, you can:</p>
+          <ul class="list-disc list-inside mb-4">
             <li>
               Roll back instantly: Return to any previous working state if a bug
               pops up.
@@ -163,13 +169,15 @@
           </ul>
         </li>
         <li>
-          <h2>Centralized vs. Distributed VCS</h2>
-          <p>
+          <h2 class="text-lg font-semibold mb-2">
+            Centralized vs. Distributed VCS
+          </h2>
+          <p class="mb-4">
             Not all version control systems work the same way. They generally
             fall into two categories:
           </p>
-          <h5>Centralized VCS (The Old Way)</h5>
-          <ul>
+          <h5 class="text-md font-bold mb-2">Centralized VCS (The Old Way)</h5>
+          <ul class="list-disc list-inside mb-4">
             <li>
               How it works: A single central server holds all the project
               history. Developers download files from it and upload changes back
@@ -182,8 +190,10 @@
             </li>
           </ul>
 
-          <h5>Distributed VCS — Git (The Modern Way)</h5>
-          <ul>
+          <h5 class="text-md font-bold mb-2">
+            Distributed VCS — Git (The Modern Way)
+          </h5>
+          <ul class="list-disc list-inside mb-4">
             <li>
               How it works: Every developer has a full, local copy of the entire
               project history on their own computer.
@@ -197,13 +207,15 @@
           </ul>
         </li>
         <li>
-          <h2>Git vs. GitHub (Clearing Up the #1 Confusion)</h2>
-          <p>
+          <h2 class="text-lg font-semibold mb-2">
+            Git vs. GitHub (Clearing Up the #1 Confusion)
+          </h2>
+          <p class="mb-4">
             Beginners often get confused between Git and GitHub, but they are
             entirely different tools that work together.
           </p>
-          <h5>Git (The Engine)</h5>
-          <ul>
+          <h5 class="text-md font-bold mb-2">Git (The Engine)</h5>
+          <ul class="list-disc list-inside mb-4">
             <li>
               What it is: A free, open-source command-line tool installed on
               your computer.
@@ -214,8 +226,8 @@
             </li>
             <li>Works offline: You don't need internet to use Git.</li>
           </ul>
-          <h5>GitHub (The Cloud Hub)</h5>
-          <ul>
+          <h5 class="text-md font-bold mb-2">GitHub (The Cloud Hub)</h5>
+          <ul class="list-disc list-inside mb-4">
             <li>
               What it is: A cloud-based website that hosts Git repositories.
             </li>
@@ -225,7 +237,7 @@
             </li>
             <li>Alternatives: GitLab, Bitbucket, and SourceForge.</li>
           </ul>
-          <p>
+          <p class="mb-4">
             <i
               >Analogy: Git is like the engine in a car. GitHub is like a mega
               garage where you store, show off, and work on cars with your
@@ -234,8 +246,10 @@
           </p>
         </li>
         <li>
-          <h2>The Core Mental Model: The Three States of Git</h2>
-          <p>
+          <h2 class="text-lg font-semibold mb-2">
+            The Core Mental Model: The Three States of Git
+          </h2>
+          <p class="mb-4">
             Git organizes your project into three main zones. Understanding this
             mental model prevents 90% of beginner confusion:
           </p>
@@ -255,7 +269,7 @@
             </li>
           </ol>
 
-          <p>
+          <p class="mb-4">
             <i
               >The Flow: You edit files in your Working Directory $\rightarrow$
               you stage them into the Staging Area $\rightarrow$ you commit them
@@ -264,42 +278,49 @@
           </p>
         </li>
         <li>
-          <h2>Installation and First-Time Setup</h2>
-          <p>
+          <h2 class="text-lg font-semibold mb-2">
+            Installation and First-Time Setup
+          </h2>
+          <p class="mb-4">
             Before you can use Git, you need to install it on your computer and
             tell it who you are.
           </p>
-          <h4>Step 1: Check if Git is Already Installed</h4>
-          <p>
+          <h4 class="text-md font-bold mb-2">
+            Step 1: Check if Git is Already Installed
+          </h4>
+          <p class="mb-4">
             Open your terminal (Command Prompt, PowerShell, or Git Bash) and
             type:
           </p>
-          <pre><code>git --version</code></pre>
+          <div class="mb-4 bg-gray-200 p-4 rounded-md">
+            <pre><code>git --version</code></pre>
+          </div>
 
-          <p>
+          <p class="mb-4">
             If it returns a version number (like git version 2.x.x), you're good
             to go! If not, download it from git-scm.com.
           </p>
-          <h4>Step 2: Set Your Identity</h4>
-          <p>
+          <h4 class="text-md font-bold mb-2">Step 2: Set Your Identity</h4>
+          <p class="mb-4">
             Git attaches your name and email to every "save point" you make so
             everyone knows who wrote the code. Run these two commands in your
             terminal:
           </p>
-          <div>
+          <div class="mb-4 bg-gray-200 p-4 rounded-md">
             <pre><code>git config --global user.name "Your Name"</code></pre>
             <pre><code>git config --global user.email "your.email@example.com"</code></pre>
           </div>
-          <p>
+          <p class="mb-4">
             <i>(Tip: Use the same email address you plan to use for GitHub!)</i>
           </p>
         </li>
       </ul>
       <div class="references">
         <p>References:</p>
-        <ul>
+        <ul class="list-disc list-inside">
           <li>
             <a
+              class="text-blue-600 hover:underline"
               rel="noopener noreferrer"
               target="_blank"
               href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"
@@ -308,6 +329,7 @@
           </li>
           <li>
             <a
+              class="text-blue-600 hover:underline"
               rel="noopener noreferrer"
               target="_blank"
               href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"
@@ -316,6 +338,7 @@
           </li>
           <li>
             <a
+              class="text-blue-600 hover:underline"
               rel="noopener noreferrer"
               target="_blank"
               href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup"
@@ -324,6 +347,7 @@
           </li>
           <li>
             <a
+              class="text-blue-600 hover:underline"
               href="https://docs.github.com"
               rel="noopener noreferrer"
               target="_blank"
@@ -332,8 +356,10 @@
           </li>
         </ul>
       </div>
-      <div class="next-chapter-link">
-        <p>
+      <div class="flex justify-end mt-6">
+        <p
+          class="text-right text-blue-400 border border-blue-400 p-2 rounded-md hover:bg-blue-50 transition-colors"
+        >
           <a href="basic-git-commands.html">Next Chapter: Basic Git Commands</a>
         </p>
       </div>
