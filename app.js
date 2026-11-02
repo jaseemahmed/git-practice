@@ -1,7 +1,7 @@
-const greet = (name = "Guest") => {
+const greet = (name = 'Guest') => {
   return `Hello, ${name}!`;
 };
 
-const label = "World";
+const label = 'World';
 console.log(greet(label));
 console.log(greet());
