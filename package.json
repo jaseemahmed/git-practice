@@ -1,0 +1,24 @@
+{
+  "name": "git-practice",
+  "version": "1.0.0",
+  "description": "![Static Badge](https://img.shields.io/badge/Development%3A-Ongoing-orange)\r ![Static Badge](https://img.shields.io/badge/HTML-orange?logo=html5&logoColor=%23ffffff)\r ![Static Badge](https://img.shields.io/badge/CSS-purple?logo=css&logoColor=%23ffffff)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaseemahmed/git-practice.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jaseemahmed/git-practice/issues"
+  },
+  "homepage": "https://github.com/jaseemahmed/git-practice#readme",
+  "devDependencies": {
+    "prettier": "3.9.10"
+  }
+}
