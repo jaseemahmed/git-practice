@@ -3,6 +3,7 @@
 ![Static Badge](https://img.shields.io/badge/Development%3A-Ongoing-orange)
 ![Static Badge](https://img.shields.io/badge/HTML-orange?logo=html5&logoColor=%23ffffff)
 ![Static Badge](https://img.shields.io/badge/CSS-purple?logo=css&logoColor=%23ffffff)
+![CI](https://github.com/jaseemahmed/git-practice/actions/workflows/ci.yml/badge.svg)
 
 ## About
 
