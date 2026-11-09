@@ -42,6 +42,10 @@ https://git-practis.netlify.app/
 - The primary reason is to reduce complexity and make the process easy
 - As this work will not be moved to production soon or may be never, no need to worry about the issues of using play CDN
 
+## Dependency updates
+
+Dependabot opens weekly pull requests for npm packages and GitHub Actions. Each one runs through CI and is reviewed before merging.
+
 ## Get in touch
 
 - LinkedIn: [link]
