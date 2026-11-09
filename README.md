@@ -31,6 +31,10 @@ Getting started is quick and simple:
    - Directly: Locate `index.html` in the project folder and double click it to pen in the default browser.
    - Via Live Server: If using VS Code, open the folder, right-click index.html, and select "Open with Live Server".
 
+## Live URL
+
+https://git-practis.netlify.app/
+
 ## Decisions
 
 - Tailwind is choosen as css framework to reduce time on writing custom styles by utilizing the pre weritten utility classes
